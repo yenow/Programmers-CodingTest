@@ -21,7 +21,7 @@ public class TruckStreet {
 		LinkedList<Truck> ing = new LinkedList<Truck>();
 		Stack<Integer> wait = new Stack<Integer>();
 
-		// ��湲� �듃�윮 �뒪�깮
+		
 		for (int j = truck_weights.length - 1; j >= 0; j--) {
 			wait.push(truck_weights[j]);
 		}
@@ -38,7 +38,7 @@ public class TruckStreet {
 				}
 			}
 
-			// 珥앸Т寃� 媛� 援ы븯湲�
+			
 			int sum = 0;
 			for (int h = 0; h < ing.size(); h++) {
 				sum = sum + ing.get(h).weight;
