@@ -1,10 +1,6 @@
 package greedy;
 
-import java.rmi.Remote;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 class Solution {
 	public int solution(int n, int[] lost, int[] reserve) {
@@ -17,7 +13,8 @@ class Solution {
 		for (int a : reserve) {
 			re.add(a);
 		}
-		
+		lo.sort(null);
+		re.sort(null);
 		for(int i=0; i< lo.size(); i++) {
 			for(int j=0; j< re.size(); j++) {
 				if(lo.get(i)==re.get(j)) {
